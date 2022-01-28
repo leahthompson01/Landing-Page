@@ -113,7 +113,7 @@ footer {
 /* Happens if the screen size is 601px or more */
 @media only screen and (min-width: 601px) {
     .links {
-        max-width: 15%;
+        max-width: 25%;
         max-height: auto;
     }
   }
@@ -121,7 +121,7 @@ footer {
   /* Happens if the screen size is 600px or less, set the font-size of <div> to 30px */
   @media only screen and (max-width: 600px) {
     .links {
-        max-width: 40%;
+        max-width: 60%;
         max-height: auto;
     }
   }
