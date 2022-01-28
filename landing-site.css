@@ -1,0 +1,127 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+
+body{
+    background: radial-gradient(ellipse at top, #96c7ff, rgb(6, 48, 68)),
+                radial-gradient(ellipse at bottom, #7bdeff, rgb(14, 37, 53));
+}
+
+.container img {
+    max-width: 80%;
+   height: auto;
+    border-radius: 50%;
+    border: 2px solid rgb(160, 204, 224);
+    margin: 5px auto;
+    background-color: rgb(31, 112, 85);
+}
+
+header {
+    font: 700 20px/24px "Old Times TT","Georgia";
+    color: rgb(0, 0, 0);
+  
+}
+.primary h3 {
+    padding-top: 20px;
+    text-decoration: underline;
+    font: 700 22px/30px "Old Times TT","Georgia";
+    color: rgb(0, 0, 0);
+}
+header > span {
+    font: 700 16px/20px "Old Times TT","Georgia";
+    color: rgb(0, 0, 0);
+    border-right: 3px solid rgb(45, 45, 63);
+    padding-right: 10px;
+}
+span:last-of-type {
+    border-right: none;
+}
+footer {
+    font: 400 14px/16px "Georgia";
+    color: rgb(0, 0, 0);
+    padding-top: 100px;
+    
+}
+.links button:hover {
+    color:rgb(132, 164, 190);
+    background-color: whitesmoke;
+}
+.links button {
+    background-color: rgb(32, 47, 65);
+    color: rgb(160, 204, 224);
+    font:  400 18px/24px "Old Standard TT","Georgia";
+    padding: 10px 20px;
+    max-width: 95%;
+    max-height: auto;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.links a {
+    display: block;
+   /* margin-top: 30px;*/
+    padding-top: 30px;
+}
+
+.container {
+    max-width:80%;
+  margin: 0 auto;
+    max-height: 100%;
+    text-align: center;
+}
+
+.primary {
+    max-width: 100%;
+    height: 200px;
+
+}
+.links {
+    border:4px double rgb(102, 102, 136);
+    border-radius: 20px;
+    background:
+     linear-gradient(217deg, rgba(21, 22, 22, 0.8), rgba(100, 145, 212, 0) 70.71%),
+     linear-gradient(127deg, rgba(113, 138, 155, 0.8), rgba(65, 82, 161, 0) 70.71%),
+     linear-gradient(336deg, rgba(30, 37, 39, 0.8), rgba(88, 138, 172, 0) 70.71%);
+     /*background-color:rgb(67, 99, 90);*/
+    padding-bottom: 30px;
+    /*margin-left: 37%;*/
+   margin: auto;
+}
+/*Media Queries*/
+/* Happens if the screen size is 601px or more */
+@media only screen and (min-width: 601px) {
+    .links {
+        max-width: 15%;
+        max-height: auto;
+    }
+  }
+  
+  /* Happens if the screen size is 600px or less, set the font-size of <div> to 30px */
+  @media only screen and (max-width: 600px) {
+    .links {
+        max-width: 40%;
+        max-height: auto;
+    }
+  }
